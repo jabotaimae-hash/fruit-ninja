@@ -1,4 +1,4 @@
 {
-    "python.defaultInterpreterPath": "${workspaceFolder}\\.venv-camera\\Scripts\\python.exe",
+    "python.defaultInterpreterPath": "${workspaceFolder}\\Fruit Ninja\\.venv\\Scripts\\python.exe",
     "python-envs.defaultEnvManager": "ms-python.python:system"
 }

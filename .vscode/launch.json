@@ -16,7 +16,7 @@
             "type": "debugpy",
             "request": "launch",
             "program": "${workspaceFolder}\\Fruit Ninja\\fruit_ninja.py",
-            "python": "${workspaceFolder}\\.venv-camera\\Scripts\\python.exe",
+            "python": "${workspaceFolder}\\Fruit Ninja\\.venv\\Scripts\\python.exe",
             "console": "integratedTerminal"
         }
     ]
