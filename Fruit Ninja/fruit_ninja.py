@@ -567,9 +567,9 @@ def update_camera():
         camera_surface = pygame.transform.scale(camera_frame, (WIDTH, HEIGHT))
 
         if hand_landmarker is not None:
-            frame_array = np.transpose(
-                pygame.surfarray.array3d(camera_frame),
-                (1, 0, 2)
+            # MediaPipe reads packed RGB rows; transpose alone leaves strided pixels.
+            frame_array = np.ascontiguousarray(
+                np.transpose(pygame.surfarray.array3d(camera_frame), (1, 0, 2))
             )
             hand_timestamp += 33
             mp_image = mp.Image(
